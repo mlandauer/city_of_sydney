@@ -21,7 +21,7 @@ feed.channel.items.each do |item|
 
   record = {
     "address" => item.title.gsub(' *NEW*',''),
-    "description" => ("SOMETHING NEW" + description),
+    "description" => description,
     "date_received" => item.pubDate.strftime('%Y-%m-%d'),
     "on_notice_to" => on_notice_to,
     "council_reference" => council_ref,
